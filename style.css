@@ -30,7 +30,7 @@ body {
     cursor: pointer;
     font-size: 1rem;
     transition: color 0.3s;
-    color: #ff7e5f; /* Set the color to #ff7e5f */
+    color: #ff7e5f;
 }
 
 .tabs button.active {
@@ -38,35 +38,35 @@ body {
 }
 
 .form {
-    display: none; /* Hide forms by default */
+    display: none; 
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .form.active {
-    display: block; /* Show active form */
-    opacity: 1; /* Fully visible */
+    display: block; 
+    opacity: 1; 
 }
 
 .form.enter {
-    opacity: 0; /* Start as invisible for entering */
-    animation: fadeIn 0.3s forwards; /* Fade in animation */
+    opacity: 0; 
+    animation: fadeIn 0.3s forwards; 
 }
 
 .form.exit {
-    opacity: 1; /* Fully visible before exit */
-    animation: fadeOut 0.3s forwards; /* Fade out animation */
+    opacity: 1; 
+    animation: fadeOut 0.3s forwards; 
 }
 
 @keyframes fadeIn {
     to {
-        opacity: 1; /* End state of fade in */
+        opacity: 1; 
     }
 }
 
 @keyframes fadeOut {
     to {
-        opacity: 0; /* End state of fade out */
+        opacity: 0; 
     }
 }
 
@@ -92,7 +92,7 @@ input:focus {
     outline: none;
 }
 
- input.invalid {
+input.invalid {
     border-color: red;
     animation: shake 0.3s;
 }
@@ -101,7 +101,6 @@ input.valid {
     border-color: green;
     animation: pulse 0.5s;
 }
-
 button {
     width: 100%;
     padding: 0.75rem;
@@ -148,4 +147,3 @@ button:hover {
     font-size: 0.875rem;
     display: none;
 }
-
